@@ -12,7 +12,7 @@ export default async function PageHeader({ className }) {
   const { data: { user }, error } = await supabase.auth.getUser()
   return (
     <header className={`flex justify-between items-center ${className}`}>
-      <Link href="/dashboard" className="text-xl hover:underline underline-offset-8 decoration-2">Finance App</Link>
+      <Link href="/dashboard" className="text-xl hover:underline underline-offset-8 decoration-2">CANE-3</Link>
 
       <div className="flex items-center">
         <DarkModeToggle defaultMode={theme} />
