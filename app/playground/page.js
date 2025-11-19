@@ -1,6 +1,5 @@
 import PageHeader from '@/components/page-header'
 
-import TransactionSummaryItem from '@/components/transaction-summary-item';
 import Button from '@/components/button';
 import Label from '@/components/label';
 import Input from '@/components/input';
