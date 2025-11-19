@@ -1,0 +1,37 @@
+auth.user
+    -   uid
+    -   credentials
+    -   account status (active, email_verified, etc)
+PERSONA
+    -   displayname
+    -   nombres
+    -   apellidos
+    -   foto
+    -   avatar
+    -   fecha nacimiento
+    -   nacionalidad
+    -   genero
+    -   direccion
+    -   pais/ciudad ubicacion
+    -   telefono
+
+preferencias
+    -   tema visual
+    -   idioma 
+    -   notificaciones
+    -   unidades de medida
+
+datos de contacto propio
+    -   direcciones
+        -   direccion
+        -   ciudad
+        -   default?
+    -   telefonos
+        -   pais (codigo)
+        -   numero
+        -   default?
+
+contactos de emergencia
+    -   nombre completo
+    -   email
+    -   telefono

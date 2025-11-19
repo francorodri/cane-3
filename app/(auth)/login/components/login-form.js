@@ -11,14 +11,19 @@ const initialState = {
 
 export default function LoginForm() {
   const [state, formAction] = useFormState(login, initialState)
-  return <form action={formAction} className="space-y-2">
-    <Input type="email" placeholder="name@example.com"
-      name="email" required />
-    <SubmitButton type="submit" size="sm" className="w-full">
-      Sign in with email
-    </SubmitButton>
-    <p className={`${state?.error ? 'text-red-500' : 'text-green-500'} text-sm text-center`}>
-      {state?.message}
-    </p>
-  </form>
+  return (
+    <form action={formAction} className="space-y-2">
+      <Input type="email" placeholder="name@example.com" name="email" required />
+      <Input type="password" placeholder="Password" name="password" required />
+      <SubmitButton type="submit" size="sm" className="w-full">
+        Sign in
+      </SubmitButton>
+      <p className="text-sm text-center">
+        <a href="/auth/forgot-password" className="text-blue-500 hover:underline">Forgot password?</a>
+      </p>
+      <p className={`${state?.error ? 'text-red-500' : 'text-green-500'} text-sm text-center`}>
+        {state?.message}
+      </p>
+    </form>
+  )
 }
