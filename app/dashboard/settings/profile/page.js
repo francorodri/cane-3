@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server';
 import { ProfileForm } from './components/profile-form';
 import { ProfileDisplay } from './components/profile-display';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import { redirect } from 'next/navigation';
 
 export default async function Page({ searchParams }) {
@@ -27,5 +28,9 @@ export default async function Page({ searchParams }) {
 
   const editMode = searchParams.edit === 'true';
 
-  return editMode ? <ProfileForm profile={profile} /> : <ProfileDisplay profile={profile} />;
+  return (
+    <ErrorBoundary>
+      {editMode ? <ProfileForm profile={profile} /> : <ProfileDisplay profile={profile} />}
+    </ErrorBoundary>
+  );
 }
