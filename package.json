@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch db.json --port 3100"
+    "json-server": "json-server --watch db.json --port 3100",
+    "clean-project": "rm -rf node_modules .next && npm install",
+    "clean-all": "rm -rf .next && npm cache clean --force && rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
