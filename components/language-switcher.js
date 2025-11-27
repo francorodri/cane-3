@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
   return (
     <div>
       <label htmlFor="language-select" className="sr-only">
-        {t("language_switcher")}
+        {t("common.language_switcher")}
       </label>
       <Select
         id="language-select"

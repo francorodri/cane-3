@@ -15,11 +15,11 @@ export default function ForgotPasswordPage() {
   const { t } = useLanguage();
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-2xl font-bold mb-4">{t("forgot_password_title")}</h1>
+      <h1 className="text-2xl font-bold mb-4">{t("forgot_password.title")}</h1>
       <form action={formAction} className="space-y-4 w-full max-w-sm">
-        <Input type="email" placeholder={t("login_email_placeholder")} name="email" required />
+        <Input type="email" placeholder={t("login.email_placeholder")} name="email" required />
         <SubmitButton type="submit" size="sm" className="w-full">
-          {t("forgot_password_send_email")}
+          {t("forgot_password.send_email")}
         </SubmitButton>
         <p className={`${state?.error ? 'text-red-500' : 'text-green-500'} text-sm text-center`}>
           {state?.message}

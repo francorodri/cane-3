@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>{t("greeting")}</h1>
-      <p>{t("welcome")}</p>
+      <h1>{t("home.greeting")}</h1>
+      <p>{t("home.welcome")}</p>
       <LanguageSwitcher />
     </main>
   );
