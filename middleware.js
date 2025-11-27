@@ -7,7 +7,9 @@ export async function middleware(request) {
   const { data: { user }} = await supabase.auth.getUser();
 
   if (!user && process.env.NODE_ENV === 'development' && request.nextUrl.pathname.startsWith('/dashboard')) {
-    return NextResponse.redirect(new URL('/force-login', request.url));
+    const redirectTo = request.nextUrl.pathname + request.nextUrl.search;
+    const url = new URL(`/force-login?redirectTo=${encodeURIComponent(redirectTo)}`, request.url);
+    return NextResponse.redirect(url);
   }
 
   if (!user && request.nextUrl.pathname.startsWith('/dashboard')) {

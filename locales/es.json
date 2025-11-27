@@ -42,5 +42,11 @@
     "your_city": "Tu ciudad",
     "your_phone_number": "Tu número de teléfono",
     "your_email": "Tu correo electrónico"
+  },
+  "dashboard_settings": {
+    "settings_page_title": "Configuración",
+    "profile_link": "Perfil",
+    "settings_link": "Configuración",
+    "avatar_link": "Avatar"
   }
 }

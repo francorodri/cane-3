@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 import { CircleUser, KeyRound } from 'lucide-react'
 import { sizes, variants } from '@/lib/variants'
 import SignOutButton from './sign-out-button'
+import LanguageSwitcher from './language-switcher'
 
 export default async function PageHeader({ className }) {
   const theme = useServerDarkMode()
@@ -15,6 +16,7 @@ export default async function PageHeader({ className }) {
       <Link href="/dashboard" className="text-xl hover:underline underline-offset-8 decoration-2">CANE-3</Link>
 
       <div className="flex items-center">
+        <LanguageSwitcher />
         <DarkModeToggle defaultMode={theme} />
         {user && <Link href="/dashboard/settings" className={`flex items-center space-x-1 ${variants['ghost']} ${sizes['sm']}`}>
           <CircleUser className="w-6 h-6" />
