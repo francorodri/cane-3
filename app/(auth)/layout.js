@@ -1,6 +1,9 @@
+"use client";
+
 import { sizes, variants } from "@/lib/variants"
 import Link from "next/link"
 import {ChevronLeft} from "lucide-react"
+import LanguageSwitcher from "@/components/language-switcher"
 
 export default function Layout({children}) {
   return <main>
@@ -9,6 +12,7 @@ export default function Layout({children}) {
         <ChevronLeft className="w-4 h-4" />
         <span>Back</span>
       </Link>
+      <LanguageSwitcher />
     </div>
     <div className="mt-8">
       {children}

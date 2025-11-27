@@ -1,5 +1,13 @@
 {
   "greeting": "Hello",
   "welcome": "Welcome to our application",
-  "language_switcher": "Change language"
+  "language_switcher": "Change language",
+  "login_welcome_back": "Welcome back",
+  "login_instructions": "Enter your email to sign in/create your account. No password is required.",
+  "login_email_placeholder": "name@example.com",
+  "login_password_placeholder": "Password",
+  "login_sign_in": "Sign in",
+  "login_forgot_password": "Forgot password?",
+  "forgot_password_title": "Forgot Password",
+  "forgot_password_send_email": "Send reset email"
 }

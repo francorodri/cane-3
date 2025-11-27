@@ -1,5 +1,13 @@
 {
   "greeting": "Hola",
   "welcome": "Bienvenido a nuestra aplicación",
-  "language_switcher": "Cambiar idioma"
+  "language_switcher": "Cambiar idioma",
+  "login_welcome_back": "Bienvenido de nuevo",
+  "login_instructions": "Introduce tu correo electrónico para iniciar sesión/crear tu cuenta. No se requiere contraseña.",
+  "login_email_placeholder": "nombre@ejemplo.com",
+  "login_password_placeholder": "Contraseña",
+  "login_sign_in": "Iniciar sesión",
+  "login_forgot_password": "¿Olvidaste tu contraseña?",
+  "forgot_password_title": "Olvidé mi contraseña",
+  "forgot_password_send_email": "Enviar correo de restablecimiento"
 }
