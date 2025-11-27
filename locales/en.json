@@ -18,5 +18,29 @@
   "forgot_password": {
     "title": "Forgot Password",
     "send_email": "Send reset email"
+  },
+  "profile_settings": {
+    "display_name": "Display Name",
+    "names": "Names",
+    "last_names": "Last Names",
+    "birthday": "Birthday",
+    "country": "Country",
+    "gender": "Gender",
+    "address": "Address",
+    "city": "City",
+    "phone_number": "Phone Number",
+    "email": "Email",
+    "edit_profile": "Edit Profile",
+    "update_profile": "Update Profile",
+    "cancel": "Cancel",
+    "your_display_name": "Your display name",
+    "your_names": "Your names",
+    "your_last_names": "Your last names",
+    "your_country": "Your country",
+    "your_gender": "Your gender",
+    "your_address": "Your address",
+    "your_city": "Your city",
+    "your_phone_number": "Your phone number",
+    "your_email": "Your email"
   }
 }

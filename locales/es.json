@@ -18,5 +18,29 @@
   "forgot_password": {
     "title": "Olvidé mi contraseña",
     "send_email": "Enviar correo de restablecimiento"
+  },
+  "profile_settings": {
+    "display_name": "Nombre de usuario",
+    "names": "Nombres",
+    "last_names": "Apellidos",
+    "birthday": "Fecha de nacimiento",
+    "country": "País",
+    "gender": "Género",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "phone_number": "Número de teléfono",
+    "email": "Correo electrónico",
+    "edit_profile": "Editar perfil",
+    "update_profile": "Actualizar perfil",
+    "cancel": "Cancelar",
+    "your_display_name": "Tu nombre de usuario",
+    "your_names": "Tus nombres",
+    "your_last_names": "Tus apellidos",
+    "your_country": "Tu país",
+    "your_gender": "Tu género",
+    "your_address": "Tu dirección",
+    "your_city": "Tu ciudad",
+    "your_phone_number": "Tu número de teléfono",
+    "your_email": "Tu correo electrónico"
   }
 }

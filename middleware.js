@@ -1,15 +1,21 @@
 import { updateSession } from './lib/supabase/middleware'
 import { createClient } from './lib/supabase/server'
+import { NextResponse } from 'next/server'
 
 export async function middleware(request) {
-  const { data: { user }} = await createClient().auth.getUser()
+  const supabase = createClient();
+  const { data: { user }} = await supabase.auth.getUser();
+
+  if (!user && process.env.NODE_ENV === 'development' && request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.redirect(new URL('/force-login', request.url));
+  }
 
   if (!user && request.nextUrl.pathname.startsWith('/dashboard')) {
-    return Response.redirect(new URL('/login', request.url))
+    return NextResponse.redirect(new URL('/login', request.url))
   }
 
   if (user && request.nextUrl.pathname.startsWith('/login')) {
-    return Response.redirect(new URL('/dashboard', request.url))
+    return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 
   return await updateSession(request)
